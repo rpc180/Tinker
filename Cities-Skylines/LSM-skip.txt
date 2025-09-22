@@ -1,3 +1,24 @@
+## Adding lines to trace vscode updates
+- installed git via chocolatey
+- in administrative command prompt ran
+    PS C:\Users\Romel.Punsal> git config --global user.name "rpc180"                                                        
+    PS C:\Users\Romel.Punsal> git config --global user.email "romelpunsal@gmail.com"
+    PS C:\Users\Romel.Punsal> git config --list                                      
+- Created .ssh directory in C:\Users\Romel.Punsal
+    - ssh-keygen -t ed25519 -C "romelpunsal@gmail.com"
+    - saved without passphrase in .ssh\key (and .pub file)
+- Had to install the ssh-agent in Windows 11
+    - add-windowscapability -online -name openSSH.client~~~~0.0.1.0
+    - get-service ssh-agent (shown as stopped)
+    - set-service ssh-agent -startupType Automatic
+    - start-service ssh-agent
+    - get-service ssh-agent (shown as running)
+- Add ssh_key to agent
+    - ssh-add $env:USERPROFILE\.ssh\github_ssh_key
+    - ssh-add -l (shows included SSH keys)
+    - ssh -T git@github.com (Should show "Hi rpc180! ...")
+- Commit test from vscode should complete after login prompt in window
+
 #
 # PREFAB SKIPPING USING LOADING SCREEN MOD
 #
