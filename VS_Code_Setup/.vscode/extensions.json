@@ -1,0 +1,37 @@
+// Create a .vscode folder in your project root.
+// 
+// Save the snippet above as .vscode/extensions.json.
+// Open the project in VS Code → you’ll see a “This workspace recommends extensions” notification with a one-click install option.
+
+{
+  "recommendations": [
+    // --- Python / Conda workflow ---
+    "ms-python.python",               // Python core
+    "ms-python.vscode-pylance",       // IntelliSense (Pyright engine)
+    "ms-toolsai.jupyter",             // Notebooks
+    "ms-python.black-formatter",      // Black formatter
+    "ms-python.isort",                // Import sorting
+    "ms-python.debugpy",              // Debugger
+    // "ms-python.python-environments", // (Optional) GUI env picker
+
+    // --- Git / GitHub ---
+    "eamodio.gitlens",                // Git superpowers
+    "github.vscode-pull-request-github", // PRs & Issues
+
+    // --- Infra / Scripting ---
+    "hashicorp.terraform",            // Terraform
+    "ms-vscode.powershell",           // PowerShell
+
+    // --- Productivity / UI ---
+    "usernamehw.errorlens",           // Inline errors
+    "christian-kohler.path-intellisense", // Path autocomplete
+    "mechatroner.rainbow-csv",        // CSV tooling
+    "pkief.material-icon-theme",      // Icons
+
+    // --- Optional (enabled in your list) ---
+    "johnpapa.vscode-peacock",        // Colorize workspace
+    "ms-vsliveshare.vsliveshare",     // Live collaboration
+    "tomoki1207.pdf",                 // PDF viewer
+    "vsls-contrib.gistfs"             // Gist explorer
+  ]
+}
